@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram photo Feed</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div>
+    <!--barra de navegacion superior-->
+    <nav class="navbar navbar-light barraSuperior">
+      <div class="container-fluid">
+        <a class="navbar-brand"> <i class="bi bi-instagram"> </i>Instagram</a>
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <button type="button" class="btn btn-success me-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Create new post
+            </button>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle bg-secondary text-light" data-bs-toggle="dropdown" href="#" role="button"
+              aria-expanded="false"><i class="bi-gear"></i></a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><a class="dropdown-item" href="#">Accessibility</a></li>
+              <li><a class="dropdown-item" href="#">Privacy and data</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <!--Aqui termina la barra de navegacion superior-->
+
+  <!--Aqui empiezan las pils-->
+  <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab"
+        aria-selected="true"><i class="bi bi-grid-3x3"></i></button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link btn-primary" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button"
+        role="tab" aria-controls="profile" aria-selected="false"><i class="bi bi-square-fill"></i></button>
+    </li>
+  </ul>
+  <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+      <div class="row mb-2">
+        <div class="col-4"> <img
+            src="https://t4.ftcdn.net/jpg/05/99/92/79/240_F_599927959_wHFlZsvxYzdRjpWWMj1dyRVMqDa0LO3V.jpg" alt="">
+        </div>
+        <div class="col-4"> <img
+            src="https://t3.ftcdn.net/jpg/06/00/40/26/240_F_600402638_zPFu65257K5RTPjlbddNtB4KMA29MwQE.jpg" alt="">
+        </div>
+        <div class="col-4"> <img
+            src="https://t4.ftcdn.net/jpg/05/98/60/15/240_F_598601542_sNoC9lpqXiiK1gcQIlThgvWzKYDjjJwc.jpg" alt="">
+        </div>
+      </div>
+      <div class="row mb-2">
+        <div class="col-4"> <img
+            src="https://t4.ftcdn.net/jpg/05/98/42/33/240_F_598423372_fImW6EkCrM7f757Ah0Z1rH9rgFRsNGnM.jpg" alt="">
+        </div>
+        <div class="col-4"> <img
+            src="https://t4.ftcdn.net/jpg/05/95/97/21/240_F_595972174_IKlN6dyRzcS0PhKc9GzjuIwCOteajX8U.jpg" alt="">
+        </div>
+        <div class="col-4"> <img
+            src="https://t4.ftcdn.net/jpg/05/93/47/93/240_F_593479311_Wehyl5GCQAy2DqtM202cSMr6uL5x6T87.jpg" alt="">
+        </div>
+      </div>
+      <div class="row mb-2">
+        <div class="col-4"> <img
+            src="https://t3.ftcdn.net/jpg/05/95/67/92/240_F_595679258_5VodalQwnjAEp8ifZXpTrbIcQ9bhcOMt.jpg" alt="">
+        </div>
+        <div class="col-4"> <img
+            src="https://t4.ftcdn.net/jpg/05/98/76/01/240_F_598760115_jCpjdZdUl55trhGnoiD3se9MQXb8N8Zc.jpg" alt="">
+        </div>
+        <div class="col-4"> <img
+            src="https://t4.ftcdn.net/jpg/05/96/05/55/240_F_596055560_697HDBfLtnUBn9bLHkXuSYRxGhE30fAH.jpg" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+      <div class="container">
+        <div class="d-flex justify-content-center border">
+          <div>
+            <div> 
+              <p class="text-end"> 26/08</p>
+              <h5>Paseando en Helicoptero!!</h5>
+            </div>
+            <img src="https://t4.ftcdn.net/jpg/05/99/92/79/240_F_599927959_wHFlZsvxYzdRjpWWMj1dyRVMqDa0LO3V.jpg" alt="">
+            <p><strong>3249 likes</strong></p>
+            <p> Este es un texto meramente ilustrativo para el paisaje</p>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center border">
+          <div>
+            <div> 
+              <p class="text-end"> 21/06</p>
+              <h5>Libres de ser nosotras</h5>
+            </div>
+            <img src="https://t3.ftcdn.net/jpg/06/00/40/26/240_F_600402638_zPFu65257K5RTPjlbddNtB4KMA29MwQE.jpg" alt="">
+            <p><strong>6848 likes</strong></p>
+            <p> Este es un texto meramente ilustrativo para 3 mujeres</p>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center border">
+          <div>
+            <div> 
+              <p class="text-end"> 10/12</p>
+              <h5>Niña Feliz</h5>
+            </div>
+            <img src="https://t4.ftcdn.net/jpg/05/98/60/15/240_F_598601542_sNoC9lpqXiiK1gcQIlThgvWzKYDjjJwc.jpg" alt="">
+            <p><strong>8087 likes</strong></p>
+            <p> Este es un texto meramente ilustrativo para la niña</p>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center border">
+          <div>
+            <div> 
+              <p class="text-end"> 31/12</p>
+              <h5>Vestido Rojo</h5>
+            </div>
+            <img src="https://t4.ftcdn.net/jpg/05/98/42/33/240_F_598423372_fImW6EkCrM7f757Ah0Z1rH9rgFRsNGnM.jpg" alt="">
+            <p><strong>1568 likes</strong></p>
+            <p> Este es un texto meramente ilustrativo para el Vestido</p>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center border">
+          <div>
+            <div> 
+              <p class="text-end"> 01/01</p>
+              <h5>Pareja en una van</h5>
+            </div>
+            <img src="https://t4.ftcdn.net/jpg/05/95/97/21/240_F_595972174_IKlN6dyRzcS0PhKc9GzjuIwCOteajX8U.jpg" alt="">
+            <p><strong>4678 likes</strong></p>
+            <p> Este es un texto meramente ilustrativo para el la pareja</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Aqui terminan los pils-->
+
+  <!--Aqui esta el modal-->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Caption</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1"
+              placeholder="Add the caption of your post here" rows="3"></textarea>
+            <i class="bi bi-camera-fill ms-1 me-2"></i> <i class="bi bi-geo-alt-fill"></i>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-success">Publish</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Aqui termina el Modal-->
+
+
+  <!--JavaScrip bundle-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+    integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
